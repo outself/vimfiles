@@ -11,9 +11,6 @@ set history=1000
 set showcmd     "show incomplete cmds down the bottom
 set showmode    "show current mode down the bottom
 
-set incsearch   "find the next match as we type the search
-set hlsearch    "hilight searches by default
-
 set nowrap      "dont wrap lines
 set linebreak   "wrap lines at convenient points
 
@@ -209,8 +206,6 @@ set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
 set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
 
 "display tabs and trailing spaces
-set list
-set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 
 set formatoptions-=o "dont continue comments when pushing o/O
 
@@ -227,8 +222,7 @@ filetype indent on
 syntax on
 
 "some stuff to get the mouse going in term
-set mouse=a
-set ttymouse=xterm2
+set mouse-=a
 
 "tell the term has 256 colors
 set t_Co=256
