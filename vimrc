@@ -306,4 +306,4 @@ function! s:HighlightLongLines(width)
 endfunction
 
 set encoding=utf8
-
+set pastetoggle=<F5>
